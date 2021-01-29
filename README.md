@@ -30,6 +30,7 @@ There are Four file Here
 
 ======================================================================================
 
+# Contain of Repo
 
 ### 1. README.md: Discription of files and Purpose of Repo
 
@@ -49,6 +50,6 @@ Step 5. From the data set in step 4, creates a second, independent tidy data set
 
 ### 4. tidy_HumanActivity_data.txt: Output file which is Tidy Data Specically produce from step 4. 
 
-### 5.tidy_HumanActivityMean_data.txt: Output file Tidy Data from step 5, its has mean of every features of tidy_HumanActivity_data.txt grouped by Subjects andActivity
+### 5. tidy_HumanActivityMean_data.txt: Output file Tidy Data from step 5, its has mean of every features of tidy_HumanActivity_data.txt grouped by Subjects andActivity
 
 ======================================================================================
