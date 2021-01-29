@@ -24,19 +24,19 @@ Here are the data for the project:
 
  https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip  
 
-## There are Four file Here 
+There are Four file Here 
 
-# 1. run_anlysis.r = Where I did my anlysis to clean and solve all question:
+## 1. run_anlysis.r = Where I did my anlysis to clean and solve all question:
 Step 1. Merges the training and the test sets to create one data set.
 Step 2. Extracts only the measurements on the mean and standard deviation for each measurement. 
 Step 3. Uses descriptive activity names to name the activities in the data set
 Step 4. Appropriately labels the data set with descriptive variable names. 
 Step 5. From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 
-# 2. README.md: Discription of files and Purpose of Repo
+## 2. README.md: Discription of files and Purpose of Repo
 
-# 3. tidy_HumanActivity_data.txt: Output file which is Tidy Data Specically produce from step 4. 
+## 3. tidy_HumanActivity_data.txt: Output file which is Tidy Data Specically produce from step 4. 
 
-# 4.tidy_HumanActivityMean_data.txt: Output file Tidy Data from step 5, its has mean of every features of tidy_HumanActivity_data.txt grouped by Subjects andActivity
+## 4.tidy_HumanActivityMean_data.txt: Output file Tidy Data from step 5, its has mean of every features of tidy_HumanActivity_data.txt grouped by Subjects andActivity
 
-# 5.CodeBook.md :
+## 5.CodeBook.md :
