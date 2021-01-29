@@ -17,6 +17,8 @@ dateDownloaded <- date()
 
 #date:- "Thu Jan 28 20:08:06 2021"
 
+================================================================================
+
 library(dplyr)
 
 #read training data
@@ -36,6 +38,7 @@ test_y <-
 sub_test <-
   read.table("./Data/Raw_Dataset/UCI HAR Dataset/test/subject_test.txt", )
 
+================================================================================
 
 ##Q.1. Merges the training and the test sets to create one data set.
 #Column Binding train(x,y),test(x,y),sub_train and sub_test.Then Row binding together
@@ -54,12 +57,14 @@ colnames(HumanActivity) <- c("Subjects", features[, 2], "Activity")
 #remove base table as we dont require it anymore besides it take up our memory
 rm(train_x, train_y, sub_train, test_x, test_y, sub_test)
 
+================================================================================
 
 ## Q.2. Extracts only the measurements on the mean and standard deviation for each measurement
 ColIntrested <-
   grepl("Subject|mean|std|Activity", colnames(HumanActivity)) #Logical output so we know which coloumn have mean std and activity(wich is y)
 HumanActivity <- HumanActivity[, ColIntrested]
 
+================================================================================
 
 ## Q.3. Uses descriptive activity names to name the activities in the data set
 
@@ -72,6 +77,8 @@ HumanActivity$Activity <-
          levels = activity_labels[, 1],
          labels = activity_labels$V2)
 
+
+================================================================================
 
 ## Q.4. Appropriately labels the data set with descriptive variable names
 
@@ -98,11 +105,13 @@ ColumnNames <- gsub("([Bb][o][d][y])+", "Body", ColumnNames)
 # Replacing column names
 colnames(HumanActivity) <- ColumnNames
 
+================================================================================
 
 ## Q.5. From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 HumanActivityMean <-
   HumanActivity %>% group_by(Subjects, Activity) %>% summarise_each(funs = mean)
 
+================================================================================
 
 # Writing tidy data
 write.table(HumanActivity, "tidy_HumanActivity_data.txt",row.names = FALSE)
