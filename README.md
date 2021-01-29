@@ -48,8 +48,8 @@ Step 4. Appropriately labels the data set with descriptive variable names.
 Step 5. From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 
 
-### 4. tidy_HumanActivity_data.txt: Output file which is Tidy Data Specically produce from step 4. 
+### 4. tidy_HumanActivity_data.txt: Output file which is Tidy Data Specically produce from step 6 of CodeBook. 
 
-### 5. tidy_HumanActivityMean_data.txt: Output file Tidy Data from step 5, its has mean of every features of tidy_HumanActivity_data.txt grouped by Subjects andActivity
+### 5. tidy_HumanActivityMean_data.txt: Output file Tidy Data from step 7 of CodeBook, its has mean of every features of tidy_HumanActivity_data.txt grouped by Subjects andActivity
 
 ======================================================================================
