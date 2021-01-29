@@ -105,5 +105,5 @@ HumanActivityMean <-
 
 
 # Writing tidy data
-write.table(HumanActivity, "tidy_HumanActivity_data.txt")
-write.table(HumanActivityMean, "tidy_HumanActivityMean_data.txt")
+write.table(HumanActivity, "tidy_HumanActivity_data.txt",row.names = FALSE)
+write.table(HumanActivityMean, "tidy_HumanActivityMean_data.txt ",row.names = FALSE )
